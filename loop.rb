@@ -3,5 +3,5 @@
 # Once options are found, then continue loop.
 
 all('.dijitSelect').each do |value, index|
-    find(value).find('span[role=options]')
+    expect(find(value)).to have_selector('span[role=options]')
 end
